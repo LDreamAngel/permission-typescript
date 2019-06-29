@@ -75,7 +75,8 @@
       style="margin-top:60px;"
     >
       <aside>
-        {{ $t('permission.tips') }}
+        <!-- {{ $t('permission.tips') }} -->
+        提示框
         <br> e.g.
       </aside>
 
@@ -137,7 +138,7 @@ import SwitchRoles from './components/SwitchRoles.vue'
     SwitchRoles
   }
 })
-export default class extends Vue {
+export default class DirectivePermission extends Vue {
   private key = 1 // 为了能每次切换权限的时候重新初始化指令
   private checkPermission = checkPermission
 

@@ -52,11 +52,6 @@ export const constantRoutes: RouteConfig[] = [
         meta: { title: 'External Link', icon: 'link' }
       }
     ]
-  },
-  {
-    path: '*',
-    redirect: '/404',
-    meta: { hidden: true }
   }
 ]
 
@@ -69,7 +64,7 @@ export const asyncRoutes: RouteConfig[] = [
   {
     path: '/permission',
     component: Layout,
-    redirect: '/permission/index',
+    redirect: '/permission/directive',
     meta: {
       title: 'permission',
       icon: 'lock',
@@ -78,21 +73,21 @@ export const asyncRoutes: RouteConfig[] = [
     },
     children: [
       {
-        path: 'page',
-        component: () => import(/* webpackChunkName: "permission-page" */ '@/views/permission/page.vue'),
-        name: 'PagePermission',
-        meta: {
-          title: 'pagePermission',
-          roles: ['admin'] // or you can only set roles in sub nav
-        }
-      },
-      {
         path: 'directive',
         component: () => import(/* webpackChunkName: "permission-directive" */ '@/views/permission/directive.vue'),
         name: 'DirectivePermission',
         meta: {
           title: 'directivePermission'
           // if do not set roles, means: this page does not require permission
+        }
+      },
+      {
+        path: 'page',
+        component: () => import(/* webpackChunkName: "permission-page" */ '@/views/permission/page.vue'),
+        name: 'PagePermission',
+        meta: {
+          title: 'pagePermission',
+          roles: ['admin'] // or you can only set roles in sub nav
         }
       },
       {
@@ -130,6 +125,7 @@ export const asyncRoutes: RouteConfig[] = [
   {
     path: '/form',
     component: Layout,
+    redirect: '/form/index',
     children: [
       {
         path: 'index',
@@ -193,6 +189,11 @@ export const asyncRoutes: RouteConfig[] = [
         meta: { title: 'Menu2' }
       }
     ]
+  },
+  {
+    path: '*',
+    redirect: '/404',
+    meta: { hidden: true }
   }
 ]
 const createRouter = () => new Router({

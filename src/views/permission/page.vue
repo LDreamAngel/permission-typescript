@@ -14,7 +14,7 @@ import SwitchRoles from './components/SwitchRoles.vue'
     SwitchRoles
   }
 })
-export default class extends Vue {
+export default class PagePermission extends Vue {
   private handleRolesChange() {
     this.$router.push({ path: '/permission/index?' + +new Date() })
   }

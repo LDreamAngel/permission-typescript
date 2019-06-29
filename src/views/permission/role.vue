@@ -151,7 +151,7 @@ const defaultRole: Role = {
 @Component({
   name: 'RolePermission'
 })
-export default class extends Vue {
+export default class RolePermission extends Vue {
   private role = Object.assign({}, defaultRole)
   private reshapedRoutes: RouteConfig[] = []
   private serviceRoutes: RouteConfig[] = []
