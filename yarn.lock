@@ -932,6 +932,11 @@
   resolved "https://registry.yarnpkg.com/@types/js-cookie/-/js-cookie-2.2.1.tgz#aa6f6d5e5aaf7d97959e9fa938ac2501cf1a76f4"
   integrity sha512-VIVurImEhQ95jxtjs8baVU5qCzVfwYfuMrpXwdRykJ5MCI5iY7/jB4cDSgwBVeYqeXrhT7GfJUwoDOmN0OMVCA==
 
+"@types/lodash@^4.14.134":
+  version "4.14.161"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.161.tgz#a21ca0777dabc6e4f44f3d07f37b765f54188b18"
+  integrity sha512-EP6O3Jkr7bXvZZSZYlsgt5DIjiGr0dXP1/jVEwVLTFgg0d+3lWVQkRavYVQszV7dYUwvg0B8R0MBDpcmXg7XIA==
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -7385,9 +7390,9 @@ lodash._reinterpolate@~3.0.0:
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
 
 lodash.defaultsdeep@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.0.tgz#bec1024f85b1bd96cbea405b23c14ad6443a6f81"
-  integrity sha1-vsECT4WxvZbL6kBbI8FK1kQ6b4E=
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.1.tgz#512e9bd721d272d94e3d3a63653fa17516741ca6"
+  integrity sha512-3j8wdDzYuWO3lM3Reg03MuQR957t287Rpcxp1njpEa8oDrikb+FwGdW3n+FELh/A6qib6yPit0j/pv9G/yeAqA==
 
 lodash.get@^4.4.2:
   version "4.4.2"
